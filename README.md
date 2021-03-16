@@ -1,1 +1,1 @@
-# wikipedia-web-crawler
+# wikipedia-search
