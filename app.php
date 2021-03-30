@@ -39,12 +39,14 @@ $app
         $item = [];
         $data = [];
 
+
         foreach ($results as $result) {
             $item['title'] = $result->getTitle();
             $item['preview'] = $result->getPreview();
             $data[] = $item;
         }
-        
+
+
         $table = new Table($output);
         $table
             ->setHeaders(array(
