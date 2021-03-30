@@ -12,9 +12,9 @@
    ```
 
 ## Usage
-    ```sh
-    php app.php search {word-to-search}
-    ```
+
+php app.php search {word-to-search}
+
 ## Example
 
 ![Example Image](https://i.ibb.co/KGKSbX4/Screenshot-1.png)
