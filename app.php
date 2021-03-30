@@ -30,15 +30,8 @@ $app
         $wikipedia = new WikipediaEngine(new WikipediaParser(), HttpClient::create());
         $results = $wikipedia->search($word);
 
-        /*
-        echo $results->countItemsOnPage();
-        echo $results->count();
-        die();
-        */
-
         $item = [];
         $data = [];
-
 
         foreach ($results as $result) {
             $item['title'] = $result->getTitle();
@@ -50,7 +43,7 @@ $app
         $table = new Table($output);
         $table
             ->setHeaders(array(
-                array(new TableCell('showing first ' . $results->countItemsOnPage() . ' records of ' . $results->count() . ' records', array('colspan' => 2))),
+                array(new TableCell('showing ' . $results->countItemsOnPage() . ' records of ' . $results->count() . ' records for term "' . $word . '" on ' . $wikipedia->getName(), array('colspan' => 2))),
                 array('Title', 'Preview'),
             ))
             ->setRows(

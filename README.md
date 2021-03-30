@@ -19,4 +19,4 @@ php app.php search {word-to-search}
 
 ## Example
 
-![Example Image](https://i.ibb.co/KGKSbX4/Screenshot-1.png)
+![Example Image](https://i.ibb.co/PzwF05G/Screenshot-1.png)
