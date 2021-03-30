@@ -13,7 +13,9 @@
 
 ## Usage
 
+```php
 php app.php search {word-to-search}
+```
 
 ## Example
 
